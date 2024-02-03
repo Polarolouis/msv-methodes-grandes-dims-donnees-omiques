@@ -1,0 +1,300 @@
+---
+title: "Présentation de projet : Méthodes de statistique en grande dimension pour l'analyse de données de biologie moléculaire"
+author: Louis Lacoste
+date: 13 Février, 2024
+output: 
+  beamer_presentation:
+    theme: Berlin
+    slide_level: 2
+bibliography: references.bib
+header-includes:
+  - \setbeamertemplate{page number in head/foot}[totalframenumber]
+  - \usepackage{bm}
+---
+```{r useful, echo = FALSE, include = FALSE}
+require(MultiVarSel)
+require(ggplot2)
+require(tidyr)
+
+array_to_LaTeX <- function(arr, n=nrow(arr), p=ncol(arr)){
+  rows <- apply(arr, MARGIN = 1, paste, collapse = " & ")
+  if(length(arr) > p) {
+    rows <- apply(arr, MARGIN = 1, paste, collapse = " & ")
+  }
+
+  if(length(rows)>n){
+    rows <- c(
+      rows[1:ceiling(n / 2)],
+      "\\vdots",
+      rows[seq(length(rows) - floor(n / 2),length(rows))]
+    )
+  }
+  matrix_string <- paste(rows, collapse = " \\\\ ")
+  return(paste("\\begin{bmatrix}", matrix_string, "\\end{bmatrix}"))
+}
+```
+
+```{r import_donnees, echo = FALSE}
+# Import données
+table <- read.table("Table_metabolome_FH_all.csv", header = TRUE, sep = ";", dec = ",")
+
+# Retrait des 4 premières colonnes
+table2 <- table[, -seq(1, 4)]
+
+temperature <- table2$temperature
+imbibition <- table2$imbibition
+```
+
+# Présentation des données
+
+## Contexte biologique
+\small
+Le jeu de données choisi étudie l'influence de 2 paramètres sur la 
+**capacité germinative** des graines à l'aide de données de métabolomique
+pour des graines fraîchement récoltées (***F****reshly* ***H****arvested*).
+\normalsize
+
+### La température, variable qualitative à 3 niveaux :
+
+- *Low*
+- *Medium*
+- *Elevated*
+
+### Le stade d'imbibition, variable qualitative à 3 modalités : 
+    
+- DS (*Dry seed*)
+- EI après 6h d’imbibition (*Early imbibition*) correspondant à la fin de la prise d’eau, 
+- LI après 20h d’imbibition (*Late imbibition*) 
+
+
+## Extrait des données
+
+Nous présentons ici les 5 premières colonnes du jeu de données\footnote{Les 4 
+premières colonnes présentent différentes informations pour identifier 
+les conditions expérimentales et la répétition.} :
+
+```{r, echo = FALSE}
+knitr::kable(table[1:6,5:9])
+```
+
+# Statistiques descriptives
+
+### Vérifications élémentaires
+```{r verification_elementaire, echo = FALSE}
+# Moyennes des colonnes
+idx_null_mean <- as.integer(length(which(colMeans(table2[, 3:dim(table2)[2]]) == 0)))
+
+# Pour retirer les metabolomes sans variations
+idx_null_sd <- as.integer(length(which(apply(table2[, 3:dim(table2)[2]], 2, sd) == 0)))
+
+# Verifier les NAs
+idx_NAs <- as.integer(length(which(is.na(table2))))
+
+knitr::asis_output(paste(
+    "Il y a", idx_null_mean, "colonnes dont la moyenne est nulle,", idx_null_sd,
+    "colonnes dont l'écart-type est nul et", idx_NAs, "NAs."
+))
+```
+
+```{r stats_descriptive, echo = FALSE}
+
+```
+
+# Méthode de statistique en grande dimensions
+
+## Principe
+
+## Matrices $\bm X$ et $\bm Y$
+
+```{r X_Y, echo = FALSE}
+Y <- as.matrix(table2[,-c(1,2)])
+
+# Permet de récupérer la matrice de design
+X <- model.matrix(lm(Y~temperature:imbibition + 0, data=table2))
+```
+
+```{r, echo = FALSE, results="asis"}
+cat(paste0("$", array_to_LaTeX(X, n = 3), "$"))
+```
+
+```{r, echo = FALSE}
+p <- ncol(X)
+n <- nrow(X)
+
+q <- dim(Y)[2]
+
+## Rescale de Y pour éviter de donner de l'importance a certine variable
+Y <- scale(Y)
+```
+
+## Calcul des résidus
+
+```{r residus, echo = FALSE}
+# Résidus
+residus <- lm(as.matrix(Y) ~ X - 1)$residuals
+
+pvalue <- whitening_test(residus)
+
+# La pvaleur est trop grande donc les données ne sont pas blanche
+```
+
+En calculant les résidus du modèle linéaire on obtient une *p-value* de 
+`r pvalue` qui est à peine au-dessus du seuil.
+Malgré tout nous allons voir si le blanchiement permettrait d'améliorer cela.
+
+## Principe du blanchiement
+
+Le principe du blanchiement est de supprimer les corrélations existants entre 
+les colonnes.
+
+Pour cela il faut estimer $\bm \Sigma^{-1/2}$ et alors le modèle se ré-écrit :
+$$\bm Y \bm \Sigma^{-1/2} = \bm X \bm B \bm \Sigma^{-1/2} + \bm E \bm \Sigma^{-1/2}$$
+
+Puis on peut appliquer le critère LASSO et la *stability selection* sur le 
+modèle vectorisé :
+$$\mathcal Y = \mathcal X \mathcal B + \mathcal E$$
+avec
+$$\mathcal Y = vec(\bm Y \bm \Sigma^{-1/2}), \mathcal X = (\bm \Sigma^{-1/2}) \otimes \bm X, \mathcal B = vec(\bm B), \mathcal E = vec(\bm E \bm \Sigma^{-1/2})$$
+
+---
+
+Il faut donc estimer $\bm \Sigma^{-1/2}$ avec un estimateurs $\widehat{\bm \Sigma}^{-1/2}$.
+
+Pour cela le package R `MultiVarSel` (@perrot-dockesIntroductionMultiVarSel) 
+implémente 3 méthode pour blanchir les données en utilisant 3 structures de 
+dépendances :
+
+- $AR1$
+- $ARMA(p,q)$
+- Non paramétrique\footnote{Suppose uniquement que le processus est 
+stationnaire.}
+
+## Blanchiement des données
+
+Et ainsi la méthode qui blanchit le mieux ces données est la méthode *non 
+paramétrique*\footnote{Ce qui est empiriquement régulièrement le cas.}.
+Nous récupérons à la fin de cette étape la matrice $\hat{\Sigma}^{-\frac{1}{2}}$ 
+permettant de blanchir les données.
+
+```{r, echo = FALSE}
+## Testons des dépendances
+results_whithening_choice <- whitening_choice(residus, typeDeps = c("AR1", "nonparam", "ARMA", "no_whitening"), pAR = 1, qMA = 1)
+
+knitr::kable(results_whithening_choice,
+  caption = "Tableau de résultats des tests de Portmanteau pour les différentes méthodes"
+)
+## Ainsi on utilise le non param
+
+square_root_inv_hat_Sigma=whitening(residus, "nonparam", pAR = 1, qMA = 0)
+```
+
+## Sélection de variable
+<!-- TODO A CREUSER POUR COMPLÉTER -->
+
+### La *stability selection* 
+Le principe est
+
+---
+
+Voici un graphique des fréquences obtenues par ordre décroissant en appliquant 
+la *stability selection*\footnote{Nous avons fait 5000 réplicats en utilisant 
+le \emph{cluster} Migale.}
+```{r selection_variables, echo = FALSE, fig.height=2, fig.width=5, fig.cap="Fréquence de sélection par la *stability selection*"}
+nb_repli <- 5000
+nb.cores <- parallel::detectCores() - 1
+
+filename <- paste0("Freqs_metabolomeFH_TOEPLITZ_nb_repli_", nb_repli, ".Rdata")
+
+if (!file.exists(filename)) {
+  Freqs = variable_selection(Y, X, square_root_inv_hat_Sigma, nb_repli = 5000, parallel = TRUE, nb.cores = nb.cores)
+  save(Freqs, file = filename)
+} else {
+  load(filename)
+}
+
+colnames(Freqs) <- c("Names_of_Y", "Names_of_X", "frequency")
+
+df_freq_decreasing <- data.frame(
+  rank = seq(1, length(sort(Freqs$frequency, decreasing = TRUE))),
+  freq = sort(Freqs$frequency, decreasing = TRUE)
+)
+
+ggplot(df_freq_decreasing) +
+  aes(y = freq, x = rank) +
+  ylab("Fréquence") +
+  xlab("Rang de l'ordre décroissant") +
+  geom_line()
+# sort(Freqs$frequency, decreasing = TRUE)[1:50]
+```
+
+---
+
+Sur le graphique, on observe une cassure de la fréquence aux alentours de la 
+750e fréquence par ordre décroissant.
+
+Afin de pouvoir interpréter nos résultats plus facilement, notamment du point 
+de vue biologique nous allons nous limiter à un seuil de 
+<!-- TODO FIXER LE SEUIL -->
+
+## Ré-estimation des paramètres
+
+### Pourquoi ré-estimer ?
+Dans le cours (@levy-leducNotesPourCours2024), nous avons vu que les 
+Théorèmes 1 et 2 garantissent la consistance en signe des estimateurs des 
+$\tilde{\mathcal{B}}$. 
+
+Cependant, l'estimation de la valeur tend à être biaisée,
+cette étape nous permet donc de ré-estimer les valeurs des $\mathcal{B}$ qui ont
+été estimés non nuls.
+
+---
+
+```{r reestimation, echo = FALSE}
+seuil <- 0.96
+
+Freqs$Names_of_X <- gsub(pattern = "temperature", replacement = "", Freqs$Names_of_X)
+Freqs$Names_of_X <- gsub(pattern = "imbibition", replacement = "", Freqs$Names_of_X)
+
+Freqs <- Freqs %>%
+  separate(Names_of_X, into = c("Temperature", "Imbibition"), sep = ":", remove = FALSE)
+
+Freqs$Temperature <- factor(Freqs$Temperature,
+  levels = c("Low", "Medium", "Elevated")
+)
+
+Freqs$Imbibition <- factor(Freqs$Imbibition,
+  levels = c("LI", "EI", "DS")
+)
+
+indices <- which(Freqs$frequency >= seuil)
+Yvec <- as.numeric(Y %*% square_root_inv_hat_Sigma)
+Xvec <- kronecker(t(square_root_inv_hat_Sigma), X)
+Xvec_sel <- Xvec[, indices]
+
+# Ré-estimation des B_selectionnés
+B_sel_hat <- solve(t(Xvec_sel) %*% Xvec_sel, t(Xvec_sel) %*% Yvec)
+Freqs$estim <- rep(0, p * q)
+Freqs$estim[indices] <- as.vector(B_sel_hat)
+```
+
+```{r graphique, echo = FALSE, fig.cap = "Graphique en boulier des estimations pour les métabolites en fonction de la température et de l'imbibition"}
+gr <- ggplot(
+  data = Freqs[Freqs$frequency >= seuil, ],
+  aes(x = Names_of_Y, y = Temperature, color = estim)
+) +
+  scale_color_gradient2(low = "steelblue", mid = "white", high = "red") +
+  geom_point(size = 2) +
+  theme_bw() +
+  ylab("") +
+  xlab("Métabolites") +
+  theme(axis.text.x = element_text(angle = 90)) +
+  facet_wrap(~Imbibition, ncol = 1)
+gr
+```
+
+
+# Bibliographie
+
+<div id="refs"></div>
+
+# Annexes
