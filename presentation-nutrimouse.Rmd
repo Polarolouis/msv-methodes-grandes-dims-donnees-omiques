@@ -42,8 +42,10 @@ table <- nutrimouse
 
 table2 <- cbind(
     genotype = table$genotype,
-    diet = table$diet, table$gene, table$lipid
+    diet = table$diet, table$gene #, table$lipid
 )
+
+# Ne s'attend pas une structure de Toeplitz mais plutot à une par block
 
 genotype <- table2$genotype
 diet <- table2$diet
@@ -133,13 +135,10 @@ Y <- scale(Y)
 residus <- lm(as.matrix(Y) ~ X - 1)$residuals
 
 pvalue <- whitening_test(residus)
-
-# La pvaleur est trop grande donc les données ne sont pas blanche
 ```
 
 En calculant les résidus du modèle linéaire on obtient une *p-value* de 
-`r pvalue` qui est bien en dessous du seuil $\alpha = 0.05$.
-Nous allons blanchir les données.
+`r pvalue`.
 
 ## Principe du blanchiement
 
@@ -182,9 +181,6 @@ results_whithening_choice <- whitening_choice(residus, typeDeps = c("AR1", "nonp
 knitr::kable(results_whithening_choice,
   caption = "Tableau de résultats des tests de Portmanteau pour les différentes méthodes"
 )
-## Ainsi on utilise le non param
-
-square_root_inv_hat_Sigma=whitening(residus, "nonparam", pAR = 1, qMA = 0)
 ```
 
 ## Sélection de variable
@@ -201,8 +197,12 @@ le \emph{cluster} Migale.}
 ```{r selection_variables, echo = FALSE, fig.height=2, fig.width=5, fig.cap="Fréquence de sélection par la *stability selection*"}
 nb_repli <- 5000
 nb.cores <- parallel::detectCores() - 1
+whitening <- "no_whitening"
 
-filename <- paste0("Freqs_nutrimouse_TOEPLITZ_nb_repli_", nb_repli, ".Rdata")
+square_root_inv_hat_Sigma <- whitening(residus, whitening, pAR = 1, qMA = 0)
+
+
+filename <- paste0("Freqs_nutrimouse_TOEPLITZ_nb_repli_", nb_repli,"_", whitening ,".Rdata")
 
 if (!file.exists(filename)) {
   Freqs = variable_selection(Y, X, square_root_inv_hat_Sigma, nb_repli = 5000, parallel = TRUE, nb.cores = nb.cores)
@@ -248,7 +248,7 @@ cette étape nous permet donc de ré-estimer les valeurs des $\mathcal{B}$ qui o
 ---
 
 ```{r reestimation, echo = FALSE}
-seuil <- 0.96
+seuil <- 0.90
 
 Freqs$Names_of_X <- gsub(pattern = "genotype", replacement = "", Freqs$Names_of_X)
 Freqs$Names_of_X <- gsub(pattern = "diet", replacement = "", Freqs$Names_of_X)
@@ -278,15 +278,15 @@ Freqs$estim[indices] <- as.vector(B_sel_hat)
 ```{r graphique, echo = FALSE, fig.cap = "Graphique en boulier des estimations pour les métabolites en fonction de la température et de l'imbibition"}
 gr <- ggplot(
   data = Freqs[Freqs$frequency >= seuil, ],
-  aes(x = Names_of_Y, y = Genotype, color = estim)
+  aes(x = Names_of_Y, y = Diet, color = estim)
 ) +
   scale_color_gradient2(low = "steelblue", mid = "white", high = "red") +
   geom_point(size = 2) +
   theme_bw() +
   ylab("") +
-  xlab("Métabolites") +
+  xlab("") +
   theme(axis.text.x = element_text(angle = 90)) +
-  facet_wrap(~Diet, ncol = 1)
+  facet_wrap(~Genotype, ncol = 1)
 gr
 ```
 

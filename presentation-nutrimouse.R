@@ -26,8 +26,10 @@ table <- nutrimouse
 
 table2 <- cbind(
     genotype = table$genotype,
-    diet = table$diet, table$gene, table$lipid
+    diet = table$diet, table$gene #, table$lipid
 )
+
+# Ne s'attend pas une structure de Toeplitz mais plutot à une par block
 
 genotype <- table2$genotype
 diet <- table2$diet
@@ -71,22 +73,21 @@ residus <- lm(as.matrix(Y) ~ X - 1)$residuals
 
 pvalue <- whitening_test(residus)
 
-# La pvaleur est trop grande donc les données ne sont pas blanche
-
 ## Testons des dépendances
 results_whithening_choice <- whitening_choice(residus, typeDeps = c("AR1", "nonparam", "ARMA", "no_whitening"), pAR = 1, qMA = 1)
 
 knitr::kable(results_whithening_choice,
   caption = "Tableau de résultats des tests de Portmanteau pour les différentes méthodes"
 )
-## Ainsi on utilise le non param
-
-square_root_inv_hat_Sigma=whitening(residus, "nonparam", pAR = 1, qMA = 0)
 
 nb_repli <- 5000
-nb.cores <- parallel::detectCores()-1
+nb.cores <- parallel::detectCores() - 1
+whitening <- "no_whitening"
 
-filename <- paste0("Freqs_nutrimouse_TOEPLITZ_nb_repli_", nb_repli, ".Rdata")
+square_root_inv_hat_Sigma <- whitening(residus, whitening, pAR = 1, qMA = 0)
+
+
+filename <- paste0("Freqs_nutrimouse_TOEPLITZ_nb_repli_", nb_repli,"_", whitening ,".Rdata")
 
 if (!file.exists(filename)) {
   Freqs = variable_selection(Y, X, square_root_inv_hat_Sigma, nb_repli = 5000, parallel = TRUE, nb.cores = nb.cores)
