@@ -1,5 +1,5 @@
 ---
-title: "Présentation de projet : Méthodes de statistique en grande dimension pour l'analyse de données de biologie moléculaire"
+title: "Présentation de projet : Méthodes de statistiques en grande dimension pour l'analyse de données de biologie moléculaire"
 author: Louis Lacoste
 date: 13 Février, 2024
 output: 
@@ -40,9 +40,9 @@ table <- read.table("Table_metabolome_FH_all.csv", header = TRUE, sep = ";", dec
 
 # Retrait des 4 premières colonnes
 table2 <- table[, -seq(1, 4)]
-
-temperature <- table2$temperature
-imbibition <- table2$imbibition
+# TODO Remove
+# temperature <- table2$temperature
+# imbibition <- table2$imbibition
 ```
 
 # Présentation des données
@@ -100,7 +100,7 @@ knitr::asis_output(paste(
 
 ```
 
-# Méthode de statistique en grande dimensions
+# Méthode de statistiques en grande dimension
 
 ## Principe
 
@@ -135,16 +135,16 @@ residus <- lm(as.matrix(Y) ~ X - 1)$residuals
 
 pvalue <- whitening_test(residus)
 
-# La pvaleur est trop grande donc les données ne sont pas blanche
+# La pvaleur est petit par rapport à un seuil 10% donc les données ne sont pas blanche
 ```
 
 En calculant les résidus du modèle linéaire on obtient une *p-value* de 
 `r pvalue` qui est à peine au-dessus du seuil.
-Malgré tout nous allons voir si le blanchiement permettrait d'améliorer cela.
+Malgré tout nous allons voir si le blanchiment permettrait d'améliorer cela.
 
-## Principe du blanchiement
+## Principe du blanchiment
 
-Le principe du blanchiement est de supprimer les corrélations existants entre 
+Le principe du blanchiment est de supprimer les corrélations existant entre 
 les colonnes.
 
 Pour cela il faut estimer $\bm \Sigma^{-1/2}$ et alors le modèle se ré-écrit :
@@ -158,13 +158,14 @@ $$\mathcal Y = vec(\bm Y \bm \Sigma^{-1/2}), \mathcal X = (\bm \Sigma^{-1/2}) \o
 
 ---
 
-Il faut donc estimer $\bm \Sigma^{-1/2}$ avec un estimateurs $\widehat{\bm \Sigma}^{-1/2}$.
+Il faut donc estimer $\bm \Sigma^{-1/2}$ avec un estimateur $\widehat{\bm \Sigma}^{-1/2}$.
 
-Pour cela le package R `MultiVarSel` (@perrot-dockesIntroductionMultiVarSel) 
-implémente 3 méthode pour blanchir les données en utilisant 3 structures de 
-dépendances :
+<!-- TODO Changer pour mentionner que c'est 3 methodes d'estimation de la dépendance -->
+Pour cela le package R `MultiVarSel` (@perrot-dockesIntroductionMultiVarSel2019) 
+implémente 3 méthodes pour blanchir les données en utilisant 3 structures de 
+dépendance :
 
-- $AR1$
+- $AR(1)$
 - $ARMA(p,q)$
 - Non paramétrique\footnote{Suppose uniquement que le processus est 
 stationnaire.}
@@ -187,6 +188,8 @@ knitr::kable(results_whithening_choice,
 
 square_root_inv_hat_Sigma=whitening(residus, "nonparam", pAR = 1, qMA = 0)
 ```
+
+<!-- TODO Présenter la méthode de l'article, des simulations et l'appli aux données réelles -->
 
 ## Sélection de variable
 <!-- TODO A CREUSER POUR COMPLÉTER -->
@@ -225,6 +228,8 @@ ggplot(df_freq_decreasing) +
   xlab("Rang de l'ordre décroissant") +
   geom_line()
 # sort(Freqs$frequency, decreasing = TRUE)[1:50]
+
+seuil <- 0.96
 ```
 
 ---
@@ -233,8 +238,9 @@ Sur le graphique, on observe une cassure de la fréquence aux alentours de la
 750e fréquence par ordre décroissant.
 
 Afin de pouvoir interpréter nos résultats plus facilement, notamment du point 
-de vue biologique nous allons nous limiter à un seuil de 
-<!-- TODO FIXER LE SEUIL -->
+de vue biologique nous allons nous limiter à un seuil de `r seuil`.
+
+
 
 ## Ré-estimation des paramètres
 
@@ -250,7 +256,6 @@ cette étape nous permet donc de ré-estimer les valeurs des $\mathcal{B}$ qui o
 ---
 
 ```{r reestimation, echo = FALSE}
-seuil <- 0.96
 
 Freqs$Names_of_X <- gsub(pattern = "temperature", replacement = "", Freqs$Names_of_X)
 Freqs$Names_of_X <- gsub(pattern = "imbibition", replacement = "", Freqs$Names_of_X)
