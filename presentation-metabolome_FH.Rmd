@@ -97,15 +97,15 @@ knitr::asis_output(paste(
 ```
 
 ```{r stats_descriptive, echo = FALSE}
-
+# TODO Faire des stats descriptives moyennes, ACP, clustering ...
 ```
 
-# Méthode de statistiques en grande dimension
+# Méthode du cours
 
 ## Principe
 
 ## Matrices $\bm X$ et $\bm Y$
-
+<!-- TODO Détailler les matrices X et Y -->
 ```{r X_Y, echo = FALSE}
 Y <- as.matrix(table2[,-c(1,2)])
 
@@ -170,7 +170,7 @@ dépendance :
 - Non paramétrique\footnote{Suppose uniquement que le processus est 
 stationnaire.}
 
-## Blanchiement des données
+## Blanchiment des données
 
 Et ainsi la méthode qui blanchit le mieux ces données est la méthode *non 
 paramétrique*\footnote{Ce qui est empiriquement régulièrement le cas.}.
@@ -191,6 +191,81 @@ square_root_inv_hat_Sigma=whitening(residus, "nonparam", pAR = 1, qMA = 0)
 
 <!-- TODO Présenter la méthode de l'article, des simulations et l'appli aux données réelles -->
 
+# Test de $\Sigma = Id$
+
+```{r graphique_simulations, echo = FALSE, fig.height=4, fig.cap="$p-value$ pour le test basé sur la statistique T1"}
+N <- 50
+phi1 <- 0.5
+n_values <- seq(20, 300, by = 80)
+c_values <- seq(1, 12)
+
+filename <- paste0(
+    "covvar_test_n_",
+    paste0(n_values, collapse = "_"),
+    "_c_",
+    paste0(c_values, collapse = "_"),
+    "_N_", N,
+    "_AR_1_phi1_", phi1, ".Rds"
+)
+
+load(filename)
+
+
+filename_gauss <- paste0(
+    "covvar_test_n_",
+    paste0(n_values, collapse = "_"),
+    "_c_",
+    paste0(c_values, collapse = "_"),
+    "_N_", N,
+    "_gaussian.Rds"
+)
+
+load(filename_gauss)
+
+
+# Omit NAs
+result <- result_AR1_T1_T2[complete.cases(result_AR1_T1_T2), ]
+
+result$c <- as.numeric(result$c)
+result$p <- as.numeric(result$p)
+result$n <- as.numeric(result$n)
+result$type <- as.factor(result$type)
+
+result_gauss$type <- as.factor(result_gauss$type)
+
+result <- rbind(result, result_gauss)
+
+ggplot(result) +
+    aes(x = c, y = T1_pvalue_mean, group = type) +
+    geom_bar(stat = "identity") +
+    geom_errorbar(aes(
+        ymin = T1_pvalue_mean - T1_pvalue_sd,
+        ymax = T1_pvalue_mean + T1_pvalue_sd
+    ))+
+    geom_hline(aes(yintercept = 0.05, color = "red")) +
+    labs(color = "Seuil = 0.05") +
+    facet_grid(vars(result$n), vars(result$type)) +
+    ggtitle(paste0("Test sur la statistique T1 | N = ", N))
+```
+
+---
+
+```{r graphique_simu_T2, echo = FALSE, fig.height=4, fig.cap="p-value pour le test basé sur la statistique T2"}
+ggplot(result) +
+    aes(x = c, y = T2_pvalue_mean, group = type) +
+    geom_bar(stat = "identity") +
+    geom_errorbar(aes(
+        ymin = T2_pvalue_mean - T2_pvalue_sd,
+        ymax = T2_pvalue_mean + T2_pvalue_sd
+    ))+
+    geom_hline(aes(yintercept = 0.05, color = "red")) +
+    labs(color = "Seuil = 0.05") +
+    facet_grid(vars(result$n), vars(result$type)) +
+    ggtitle(paste0("Test sur la statistique T2 | N = ", N))
+```
+
+
+# Méthode du cours
 ## Sélection de variable
 <!-- TODO A CREUSER POUR COMPLÉTER -->
 

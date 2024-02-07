@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.15)  6 FEB 2024 11:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.15)  7 FEB 2024 21:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1001,10 +1001,81 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-(./presentation-metabolome_FH.nav) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pd
-ftex.map}
+(./presentation-metabolome_FH.nav)
+LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
+122.
+(/usr/share/texmf/tex/latex/lm/ot1lmss.fd
+File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+22.
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+122.
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+122.
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 122.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 122.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 122
+.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 122
+.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 122.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 122.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+22.
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <6> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 122.
 
-] [2
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <5> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 122.
+
+
+Overfull \hbox (7.83417pt too wide) detected at line 122
+  [] [][][][] [][][] [][][][][][][][] [][][][] [][][][][][][] [][][] [][]  
+ []
+
+
+Overfull \hbox (7.83417pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][][][][][][][] [][][][] [][][][][][][] [][][] [][]  
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+]
+Overfull \hbox (7.83417pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][][][][][][][] [][][][] [][][][][][][] [][][] [][]  
+ []
+
+[2
 
 ]
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10> not available
@@ -1018,88 +1089,37 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
 Overfull \vbox (1.98831pt too high) detected at line 166
  []
 
+
+Overfull \hbox (7.83417pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][][][][][][][] [][][][] [][][][][][][] [][][] [][]  
+ []
+
 [3
 
 ]
-LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-189.
-(/usr/share/texmf/tex/latex/lm/ot1lmss.fd
-File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-89.
-(/usr/share/texmf/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-189.
-(/usr/share/texmf/tex/latex/lm/omslmsy.fd
-File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-189.
-(/usr/share/texmf/tex/latex/lm/omxlmex.fd
-File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 189.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 189.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 189.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 189
-.
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 189
-.
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 189.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 189.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-89.
-(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
-(RS)
-)
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10.95> not available
 (Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 189.
 
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <8> not available
 (Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 189.
 
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <6> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 189.
-
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 189.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 189.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 189.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 189.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <9> not available
 (Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 189.
 
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <5> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 189.
-
 
 Overfull \hbox (11.4824pt too wide) in alignment at lines 189--189
  [] [] [] [] [] 
@@ -1108,41 +1128,76 @@ Overfull \hbox (11.4824pt too wide) in alignment at lines 189--189
 
 Overfull \hbox (11.4824pt too wide) in alignment at lines 189--189
  [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (7.83417pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][][][][][][][] [][][][] [][][][][][][] [][][] [][]  
  []
 
 [4
 
-] [5
+]
+Overfull \hbox (7.83417pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][][][][][][][] [][][][] [][][][][][][] [][][] [][]  
+ []
 
-] [6
+[5
 
-] [7
+]
+Overfull \hbox (7.83417pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][][][][][][][] [][][][] [][][][][][][] [][][] [][]  
+ []
 
-] [8
+[6
+
+]
+Overfull \hbox (7.83417pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][][][][][][][] [][][][] [][][][][][][] [][][] [][]  
+ []
+
+[7
+
+]
+Overfull \hbox (7.83417pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][][][][][][][] [][][][] [][][][][][][] [][][] [][]  
+ []
+
+[8
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 213.
+(Font)              <14.4> on input line 212.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 213.
+(Font)              <10> on input line 212.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 213.
+(Font)              <7> on input line 212.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 213.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 212.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 213.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 212.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 213.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 212.
 
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <7> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 213.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 212.
+
+
+Overfull \hbox (7.83417pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][][][][][][][] [][][][] [][][][][][][] [][][] [][]  
+ []
 
 [9
 
-] [10
+]
+Overfull \hbox (7.83417pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][][][][][][][] [][][][] [][][][][][][] [][][] [][]  
+ []
+
+[10
 
 ]
-Overfull \hbox (9.51944pt too wide) detected at line 235
+Overfull \hbox (9.51944pt too wide) detected at line 234
 \OMS/lmsy/m/n/10.95 Y \OT1/lmss/m/n/10.95 = \T1/lmss/m/sl/10.95 vec\OT1/lmss/m/
 n/10.95 (\T1/lmss/bx/sl/10.95 Y\OT1/lmr/bx/n/10.95 ^^F[]\OT1/lmss/m/n/10.95 )\O
 ML/lmm/m/it/10.95 ; \OMS/lmsy/m/n/10.95 X \OT1/lmss/m/n/10.95 = (\OT1/lmr/bx/n/
@@ -1152,6 +1207,11 @@ n/10.95 = \T1/lmss/m/sl/10.95 vec\OT1/lmss/m/n/10.95 (\T1/lmss/bx/sl/10.95 B\OT
 1/lmss/m/n/10.95 )\OML/lmm/m/it/10.95 ; \OMS/lmsy/m/n/10.95 E \OT1/lmss/m/n/10.
 95 = \T1/lmss/m/sl/10.95 vec\OT1/lmss/m/n/10.95 (\T1/lmss/bx/sl/10.95 E\OT1/lmr
 /bx/n/10.95 ^^F[]\OT1/lmss/m/n/10.95 )
+ []
+
+
+Overfull \hbox (7.83417pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][][][][][][][] [][][][] [][][][][][][] [][][] [][]  
  []
 
 [11
@@ -1164,48 +1224,145 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
 .
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)) [12
+))
+Overfull \hbox (7.83417pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][][][][][][][] [][][][] [][][][][][][] [][][] [][]  
+ []
 
-] [13
-
-] [14
+[12
 
 ]
-<presentation-metabolome_FH_files/figure-beamer/selection_variables-1.pdf, id=5
-20, 351.3125pt x 134.5025pt>
+Overfull \hbox (7.83417pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][][][][][][][] [][][][] [][][][][][][] [][][] [][]  
+ []
+
+[13
+
+]
+Overfull \hbox (7.83417pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][][][][][][][] [][][][] [][][][][][][] [][][] [][]  
+ []
+
+[14
+
+]
+<presentation-metabolome_FH_files/figure-beamer/graphique_simulations-1.pdf, id
+=619, 706.64pt x 277.035pt>
+File: presentation-metabolome_FH_files/figure-beamer/graphique_simulations-1.pd
+f Graphic file (type pdf)
+<use presentation-metabolome_FH_files/figure-beamer/graphique_simulations-1.pdf
+>
+Package pdftex.def Info: presentation-metabolome_FH_files/figure-beamer/graphiq
+ue_simulations-1.pdf  used on input line 293.
+(pdftex.def)             Requested size: 307.28888pt x 120.4712pt.
+
+Overfull \hbox (7.83417pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][][][][][][][] [][][][] [][][][][][][] [][][] [][]  
+ []
+
+[15
+
+ <./presentation-metabolome_FH_files/figure-beamer/graphique_simulations-1.pdf>
+]
+<presentation-metabolome_FH_files/figure-beamer/graphique_simu_T2-1.pdf, id=663
+, 706.64pt x 277.035pt>
+File: presentation-metabolome_FH_files/figure-beamer/graphique_simu_T2-1.pdf Gr
+aphic file (type pdf)
+<use presentation-metabolome_FH_files/figure-beamer/graphique_simu_T2-1.pdf>
+Package pdftex.def Info: presentation-metabolome_FH_files/figure-beamer/graphiq
+ue_simu_T2-1.pdf  used on input line 301.
+(pdftex.def)             Requested size: 307.28888pt x 120.4712pt.
+
+Overfull \hbox (7.83417pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][][][][][][][] [][][][] [][][][][][][] [][][] [][]  
+ []
+
+[16
+
+ <./presentation-metabolome_FH_files/figure-beamer/graphique_simu_T2-1.pdf>]
+Overfull \hbox (7.83417pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][][][][][][][] [][][][] [][][][][][][] [][][] [][]  
+ []
+
+[17
+
+]
+Overfull \hbox (7.83417pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][][][][][][][] [][][][] [][][][][][][] [][][] [][]  
+ []
+
+[18
+
+]
+<presentation-metabolome_FH_files/figure-beamer/selection_variables-1.pdf, id=7
+84, 351.3125pt x 134.5025pt>
 File: presentation-metabolome_FH_files/figure-beamer/selection_variables-1.pdf 
 Graphic file (type pdf)
 <use presentation-metabolome_FH_files/figure-beamer/selection_variables-1.pdf>
 Package pdftex.def Info: presentation-metabolome_FH_files/figure-beamer/selecti
-on_variables-1.pdf  used on input line 298.
+on_variables-1.pdf  used on input line 320.
 (pdftex.def)             Requested size: 307.3119pt x 117.65654pt.
-[15
 
- <./presentation-metabolome_FH_files/figure-beamer/selection_variables-1.pdf>] 
-[16
+Overfull \hbox (7.83417pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][][][][][][][] [][][][] [][][][][][][] [][][] [][]  
+ []
 
-] [17
+[19
+
+ <./presentation-metabolome_FH_files/figure-beamer/selection_variables-1.pdf>]
+Overfull \hbox (7.83417pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][][][][][][][] [][][][] [][][][][][][] [][][] [][]  
+ []
+
+[20
 
 ]
-<presentation-metabolome_FH_files/figure-beamer/graphique-1.pdf, id=622, 692.58
+Overfull \hbox (7.83417pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][][][][][][][] [][][][] [][][][][][][] [][][] [][]  
+ []
+
+[21
+
+]
+<presentation-metabolome_FH_files/figure-beamer/graphique-1.pdf, id=905, 692.58
 75pt x 493.845pt>
 File: presentation-metabolome_FH_files/figure-beamer/graphique-1.pdf Graphic fi
 le (type pdf)
 <use presentation-metabolome_FH_files/figure-beamer/graphique-1.pdf>
 Package pdftex.def Info: presentation-metabolome_FH_files/figure-beamer/graphiq
-ue-1.pdf  used on input line 329.
+ue-1.pdf  used on input line 351.
 (pdftex.def)             Requested size: 307.29689pt x 219.11604pt.
 
-Overfull \vbox (47.69048pt too high) detected at line 329
+Overfull \vbox (47.69048pt too high) detected at line 351
  []
 
-[18
 
- <./presentation-metabolome_FH_files/figure-beamer/graphique-1.pdf>] [19
+Overfull \hbox (7.83417pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][][][][][][][] [][][][] [][][][][][][] [][][] [][]  
+ []
 
-] [20
+[22
 
-] [21
+ <./presentation-metabolome_FH_files/figure-beamer/graphique-1.pdf>]
+Overfull \hbox (7.83417pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][][][][][][][] [][][][] [][][][][][][] [][][] [][]  
+ []
+
+[23
+
+]
+Overfull \hbox (7.83417pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][][][][][][][] [][][][] [][][][][][][] [][][] [][]  
+ []
+
+[24
+
+]
+Overfull \hbox (7.83417pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][][][][][][][] [][][][] [][][][][][][] [][][] [][]  
+ []
+
+[25
 
 ]
 \tf@nav=\write5
@@ -1219,16 +1376,16 @@ Overfull \vbox (47.69048pt too high) detected at line 329
 
 (./presentation-metabolome_FH.aux) ) 
 Here is how much of TeX's memory you used:
- 26617 strings out of 478287
- 518548 string characters out of 5849289
- 799474 words of memory out of 5000000
- 43976 multiletter control sequences out of 15000+600000
+ 26657 strings out of 478287
+ 519789 string characters out of 5849289
+ 804834 words of memory out of 5000000
+ 44004 multiletter control sequences out of 15000+600000
  612221 words of font info for 212 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,19n,122p,1023b,779s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.
-enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/
-enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr
+enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/
+dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr
 /share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/fonts/type1/pub
 lic/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/shar
 e/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/l
@@ -1237,13 +1394,14 @@ f/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss
 8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf/fonts
 /type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmsso9.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-</usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1
-/public/lm/lmtt10.pfb>
-Output written on presentation-metabolome_FH.pdf (21 pages, 289749 bytes).
+/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso8.pfb
+></usr/share/texmf/fonts/type1/public/lm/lmsso9.pfb></usr/share/texmf/fonts/typ
+e1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr
+/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
+Output written on presentation-metabolome_FH.pdf (25 pages, 362926 bytes).
 PDF statistics:
- 862 PDF objects out of 1000 (max. 8388607)
- 761 compressed objects within 8 object streams
- 65 named destinations out of 1000 (max. 500000)
- 86109 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 1191 PDF objects out of 1200 (max. 8388607)
+ 1065 compressed objects within 11 object streams
+ 75 named destinations out of 1000 (max. 500000)
+ 86135 words of extra memory for PDF output out of 89155 (max. 10000000)
 
