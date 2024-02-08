@@ -18,6 +18,7 @@ require(MultiVarSel)
 require(ggplot2)
 require(tidyr)
 require(FactoMineR)
+require(gridExtra)
 ```
 
 ```{r import_donnees, echo = FALSE}
@@ -86,13 +87,18 @@ knitr::asis_output(paste(
 
 ```{r acp, echo=FALSE}
 # TODO Faire des stats descriptives moyennes, ACP, clustering ...
-pca = PCA(table2[,-c(1,2)], scale.unit=TRUE, ncp=5)
+res.pca = PCA(table2, scale.unit=TRUE, ncp=5, quali.sup = c(1,2), graph = FALSE)
+plot13_pca_var <- plot.PCA(res.pca, axes=c(1, 3), choix="var", habillage="cos2")
+plot23_pca_var <- plot.PCA(res.pca, axes=c(2, 3), choix="varcor", habillage="contrib")
+grid.arrange(plot13_pca_var, plot23_pca_var, ncol = 2)
 ```
 
 ---
 
 ```{r, echo=FALSE}
-plot(pca)
+plot13_pca_ind <- plot.PCA(res.pca, axes=c(1, 3), choix="ind", habillage=1)
+plot23_pca_ind <- plot.PCA(res.pca, axes=c(2, 3), choix="ind", habillage=2)
+grid.arrange(plot13_pca_ind, plot23_pca_ind, ncol = 2)
 ```
 
 ---
@@ -314,7 +320,7 @@ result_gauss$type <- as.factor(result_gauss$type)
 result <- rbind(result, result_gauss)
 ```
 
-```{r graphique_simu_T1, echo=FALSE, fig.height=4.5, fig.cap="\\emph{p-value} pour le test basé sur la statistique T1"}
+```{r graphique_simu_T1, echo=FALSE, fig.height=4.5, fig.cap="\\emph{p-value} pour le test basé sur la statistique $T_1$"}
 ggplot(result) +
     aes(x = c, y = T1_pvalue_mean, fill = as.factor(n)) +
     geom_bar(stat = "identity") +
@@ -334,7 +340,7 @@ La ligne verticale, indique la valeur de $c$ la plus proche de nos données.
 
 ---
 
-```{r graphique_simu_T2, echo = FALSE, fig.height=4.5, fig.cap="\\emph{p-value} pour le test basé sur la statistique T2"}
+```{r graphique_simu_T2, echo = FALSE, fig.height=4.5, fig.cap="\\emph{p-value} pour le test basé sur la statistique $T_2$"}
 ggplot(result) +
     aes(x = c, y = T2_pvalue_mean, fill = as.factor(n)) +
     geom_bar(stat = "identity") +
