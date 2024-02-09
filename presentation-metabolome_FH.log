@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.15)  8 FEB 2024 18:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.15)  9 FEB 2024 18:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1081,15 +1081,15 @@ Overfull \hbox (73.05362pt too wide) has occurred while \output is active
 [2
 
 ]
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 167.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10> not available
 (Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 167.
 
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 167.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 167.
 
-Overfull \vbox (1.98831pt too high) detected at line 167
+Overfull \vbox (15.58832pt too high) detected at line 167
  []
 
 
@@ -1159,6 +1159,15 @@ Overfull \hbox (73.05362pt too wide) has occurred while \output is active
 [6
 
 ]
+<presentation-metabolome_FH_files/figure-beamer/acp-1.pdf, id=370, 712.6625pt x
+ 315.1775pt>
+File: presentation-metabolome_FH_files/figure-beamer/acp-1.pdf Graphic file (ty
+pe pdf)
+<use presentation-metabolome_FH_files/figure-beamer/acp-1.pdf>
+Package pdftex.def Info: presentation-metabolome_FH_files/figure-beamer/acp-1.p
+df  used on input line 206.
+(pdftex.def)             Requested size: 307.2871pt x 135.89879pt.
+
 Overfull \hbox (73.05362pt too wide) has occurred while \output is active
   [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
 ][][] [][]  
@@ -1166,19 +1175,15 @@ Overfull \hbox (73.05362pt too wide) has occurred while \output is active
 
 [7
 
-]
-<presentation-metabolome_FH_files/figure-beamer/unnamed-chunk-2-1.pdf, id=417, 
-568.1225pt x 495.8525pt>
+ <./presentation-metabolome_FH_files/figure-beamer/acp-1.pdf>]
+<presentation-metabolome_FH_files/figure-beamer/unnamed-chunk-2-1.pdf, id=428, 
+711.65875pt x 273.02pt>
 File: presentation-metabolome_FH_files/figure-beamer/unnamed-chunk-2-1.pdf Grap
 hic file (type pdf)
 <use presentation-metabolome_FH_files/figure-beamer/unnamed-chunk-2-1.pdf>
 Package pdftex.def Info: presentation-metabolome_FH_files/figure-beamer/unnamed
--chunk-2-1.pdf  used on input line 209.
-(pdftex.def)             Requested size: 256.67567pt x 224.02435pt.
-
-Overfull \vbox (0.99878pt too high) detected at line 209
- []
-
+-chunk-2-1.pdf  used on input line 210.
+(pdftex.def)             Requested size: 307.28867pt x 117.8879pt.
 
 Overfull \hbox (73.05362pt too wide) has occurred while \output is active
   [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
@@ -1188,16 +1193,16 @@ Overfull \hbox (73.05362pt too wide) has occurred while \output is active
 [8
 
  <./presentation-metabolome_FH_files/figure-beamer/unnamed-chunk-2-1.pdf>]
-<presentation-metabolome_FH_files/figure-beamer/unnamed-chunk-3-1.pdf, id=470, 
+<presentation-metabolome_FH_files/figure-beamer/unnamed-chunk-3-1.pdf, id=482, 
 636.3775pt x 410.53375pt>
 File: presentation-metabolome_FH_files/figure-beamer/unnamed-chunk-3-1.pdf Grap
 hic file (type pdf)
 <use presentation-metabolome_FH_files/figure-beamer/unnamed-chunk-3-1.pdf>
 Package pdftex.def Info: presentation-metabolome_FH_files/figure-beamer/unnamed
--chunk-3-1.pdf  used on input line 217.
+-chunk-3-1.pdf  used on input line 218.
 (pdftex.def)             Requested size: 307.28326pt x 198.23163pt.
 
-Overfull \vbox (1.20605pt too high) detected at line 217
+Overfull \vbox (1.20605pt too high) detected at line 218
  []
 
 
@@ -1218,40 +1223,40 @@ Overfull \hbox (73.05362pt too wide) has occurred while \output is active
 
 ]
 LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <10.95> not available
-(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 234.
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 235.
 
 LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <8> not available
-(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 234.
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 235.
 
 LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <6> not available
-(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 234.
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 235.
 
 LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 234.
+(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 235.
 
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 234.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 235.
 
 LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <8> not available
-(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 234.
+(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 235.
 
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <8> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 234.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 235.
 
 LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <6> not available
-(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 234.
+(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 235.
 
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <6> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 234.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 235.
 
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10.95> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 234.
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 235.
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <8> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 234.
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 235.
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <6> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 234.
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 235.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 23
-4.
+5.
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1263,56 +1268,30 @@ Overfull \hbox (73.05362pt too wide) has occurred while \output is active
 [11
 
 ]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 271.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 271.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 271.
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <7> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 271.
-
-LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <10> not available
-(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 271.
-
-LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <7> not available
-(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 271.
-
 LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <5> not available
-(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 271.
-
-LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <10> not available
-(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 271.
-
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 271.
-
-LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <7> not available
-(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 271.
-
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <7> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 271.
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 270.
 
 LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <5> not available
-(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 271.
+(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 270.
 
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <5> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 271.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 270.
 
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 271.
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <7> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 271.
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <5> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 271.
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 270.
 
-Overfull \hbox (10.94621pt too wide) detected at line 271
+Overfull \hbox (10.94621pt too wide) detected at line 270
 \T1/lmss/bx/sl/10.95 B \OT1/lmss/m/n/10.95 = [] []
  []
 
-
-Overfull \vbox (1.0157pt too high) detected at line 271
- []
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 270.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 270.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 270.
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <7> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 270.
 
 
 Overfull \hbox (73.05362pt too wide) has occurred while \output is active
@@ -1331,7 +1310,7 @@ Overfull \hbox (73.05362pt too wide) has occurred while \output is active
 [13
 
 ]
-Overfull \hbox (9.51944pt too wide) detected at line 302
+Overfull \hbox (9.51944pt too wide) detected at line 301
 \OMS/lmsy/m/n/10.95 Y \OT1/lmss/m/n/10.95 = \T1/lmss/m/sl/10.95 vec\OT1/lmss/m/
 n/10.95 (\T1/lmss/bx/sl/10.95 Y\OT1/lmr/bx/n/10.95 ^^F[]\OT1/lmss/m/n/10.95 )\O
 ML/lmm/m/it/10.95 ; \OMS/lmsy/m/n/10.95 X \OT1/lmss/m/n/10.95 = (\OT1/lmr/bx/n/
@@ -1377,11 +1356,11 @@ Overfull \hbox (73.05362pt too wide) has occurred while \output is active
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 354.
+(Font)              <14.4> on input line 353.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 354.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 353.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 354.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 353.
 
 
 Overfull \hbox (73.05362pt too wide) has occurred while \output is active
@@ -1392,7 +1371,7 @@ Overfull \hbox (73.05362pt too wide) has occurred while \output is active
 [17
 
 ]
-Overfull \vbox (0.14064pt too high) detected at line 369
+Overfull \vbox (0.14064pt too high) detected at line 368
  []
 
 
@@ -1412,13 +1391,13 @@ Overfull \hbox (73.05362pt too wide) has occurred while \output is active
 [19
 
 ]
-<presentation-metabolome_FH_files/figure-beamer/graphique_simu_T1-1.pdf, id=992
-, 706.64pt x 313.17pt>
+<presentation-metabolome_FH_files/figure-beamer/graphique_simu_T1-1.pdf, id=100
+5, 706.64pt x 313.17pt>
 File: presentation-metabolome_FH_files/figure-beamer/graphique_simu_T1-1.pdf Gr
 aphic file (type pdf)
 <use presentation-metabolome_FH_files/figure-beamer/graphique_simu_T1-1.pdf>
 Package pdftex.def Info: presentation-metabolome_FH_files/figure-beamer/graphiq
-ue_simu_T1-1.pdf  used on input line 405.
+ue_simu_T1-1.pdf  used on input line 404.
 (pdftex.def)             Requested size: 307.28888pt x 136.18483pt.
 
 Overfull \hbox (73.05362pt too wide) has occurred while \output is active
@@ -1429,13 +1408,13 @@ Overfull \hbox (73.05362pt too wide) has occurred while \output is active
 [20
 
  <./presentation-metabolome_FH_files/figure-beamer/graphique_simu_T1-1.pdf>]
-<presentation-metabolome_FH_files/figure-beamer/graphique_simu_T2-1.pdf, id=104
-6, 706.64pt x 313.17pt>
+<presentation-metabolome_FH_files/figure-beamer/graphique_simu_T2-1.pdf, id=105
+9, 706.64pt x 313.17pt>
 File: presentation-metabolome_FH_files/figure-beamer/graphique_simu_T2-1.pdf Gr
 aphic file (type pdf)
 <use presentation-metabolome_FH_files/figure-beamer/graphique_simu_T2-1.pdf>
 Package pdftex.def Info: presentation-metabolome_FH_files/figure-beamer/graphiq
-ue_simu_T2-1.pdf  used on input line 416.
+ue_simu_T2-1.pdf  used on input line 415.
 (pdftex.def)             Requested size: 307.28888pt x 136.18483pt.
 
 Overfull \hbox (73.05362pt too wide) has occurred while \output is active
@@ -1482,12 +1461,12 @@ Overfull \hbox (73.05362pt too wide) has occurred while \output is active
 
 ]
 <presentation-metabolome_FH_files/figure-beamer/selection_variables-1.pdf, id=1
-283, 351.3125pt x 134.5025pt>
+296, 351.3125pt x 134.5025pt>
 File: presentation-metabolome_FH_files/figure-beamer/selection_variables-1.pdf 
 Graphic file (type pdf)
 <use presentation-metabolome_FH_files/figure-beamer/selection_variables-1.pdf>
 Package pdftex.def Info: presentation-metabolome_FH_files/figure-beamer/selecti
-on_variables-1.pdf  used on input line 480.
+on_variables-1.pdf  used on input line 479.
 (pdftex.def)             Requested size: 307.3119pt x 117.65654pt.
 
 Overfull \hbox (73.05362pt too wide) has occurred while \output is active
@@ -1514,13 +1493,13 @@ Overfull \hbox (73.05362pt too wide) has occurred while \output is active
 [28
 
 ]
-<presentation-metabolome_FH_files/figure-beamer/graphique-1.pdf, id=1426, 692.5
+<presentation-metabolome_FH_files/figure-beamer/graphique-1.pdf, id=1439, 692.5
 875pt x 385.44pt>
 File: presentation-metabolome_FH_files/figure-beamer/graphique-1.pdf Graphic fi
 le (type pdf)
 <use presentation-metabolome_FH_files/figure-beamer/graphique-1.pdf>
 Package pdftex.def Info: presentation-metabolome_FH_files/figure-beamer/graphiq
-ue-1.pdf  used on input line 511.
+ue-1.pdf  used on input line 510.
 (pdftex.def)             Requested size: 307.29689pt x 171.0174pt.
 
 Overfull \hbox (73.05362pt too wide) has occurred while \output is active
@@ -1575,11 +1554,11 @@ Overfull \hbox (73.05362pt too wide) has occurred while \output is active
 
 (./presentation-metabolome_FH.aux) ) 
 Here is how much of TeX's memory you used:
- 26921 strings out of 478287
- 525046 string characters out of 5849289
+ 26907 strings out of 478287
+ 525087 string characters out of 5849289
  819128 words of memory out of 5000000
- 44139 multiletter control sequences out of 15000+600000
- 690098 words of font info for 283 fonts, out of 8000000 for 9000
+ 44130 multiletter control sequences out of 15000+600000
+ 673288 words of font info for 274 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,19n,122p,1023b,779s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.
@@ -1588,20 +1567,20 @@ dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr
 /share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/fonts/type1/pub
 lic/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/shar
 e/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/l
-m/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf
-/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss1
-2.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmss9.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb
-></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb>
-</usr/share/texmf/fonts/type1/public/lm/lmsso8.pfb></usr/share/texmf/fonts/type
-1/public/lm/lmsso9.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr
-/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmtt10.pfb>
-Output written on presentation-metabolome_FH.pdf (33 pages, 429494 bytes).
+m/lmmi5.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf
+/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts
+/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss9.pfb></
+usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></
+usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1
+/public/lm/lmsso8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso9.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/publ
+ic/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
+Output written on presentation-metabolome_FH.pdf (33 pages, 468411 bytes).
 PDF statistics:
- 1802 PDF objects out of 2073 (max. 8388607)
- 1646 compressed objects within 17 object streams
+ 1819 PDF objects out of 2073 (max. 8388607)
+ 1656 compressed objects within 17 object streams
  99 named destinations out of 1000 (max. 500000)
- 139393 words of extra memory for PDF output out of 154059 (max. 10000000)
+ 127110 words of extra memory for PDF output out of 128383 (max. 10000000)
 

@@ -37,7 +37,7 @@ table2$imbibition <- as.factor(table2$imbibition)
 ## Contexte biologique
 \small
 Le jeu de données choisi étudie l'influence de 2 paramètres sur la 
-**capacité germinative** des graines à l'aide de données de métabolomique
+**capacité germinative** des graines chez \emph{Arabidopsis Thaliana} à l'aide de données de métabolomique
 pour des graines fraîchement récoltées (***F****reshly* ***H****arvested*).
 \normalsize
 
@@ -56,7 +56,7 @@ pour des graines fraîchement récoltées (***F****reshly* ***H****arvested*).
 
 ## Extrait des données
 
-Nous présentons ici les 5 premières colonnes du jeu de données\footnote{Les 4 
+Nous présentons ici les 5 premières colonnes (5 sur 237) du jeu de données\footnote{Les 4 
 premières colonnes présentent différentes informations pour identifier 
 les conditions expérimentales et la répétition.} :
 
@@ -89,7 +89,7 @@ knitr::asis_output(paste(
 # TODO Faire des stats descriptives moyennes, ACP, clustering ...
 res.pca = PCA(table2, scale.unit=TRUE, ncp=5, quali.sup = c(1,2), graph = FALSE)
 plot13_pca_var <- plot.PCA(res.pca, axes=c(1, 3), choix="var", habillage="cos2")
-plot23_pca_var <- plot.PCA(res.pca, axes=c(2, 3), choix="varcor", habillage="contrib")
+plot23_pca_var <- plot.PCA(res.pca, axes=c(2, 3), choix="var", habillage="cos2")
 grid.arrange(plot13_pca_var, plot23_pca_var, ncol = 2)
 ```
 
@@ -104,7 +104,7 @@ grid.arrange(plot13_pca_ind, plot23_pca_ind, ncol = 2)
 ---
 
 ```{r , echo = FALSE, fig.cap="Pourcentage de variance expliqué par les composantes"}
-barplot(pca$eig[,1]/sum(pca$eig[,1]), ylim = c(0,1))
+barplot(res.pca$eig[,1]/sum(res.pca$eig[,1]), ylim = c(0,1))
 ```
 
 # Méthode du cours
@@ -149,7 +149,7 @@ $$\bm{Y} = \bm{XB} + \bm{E}$$
         \end{pmatrix}}_{p = `r p`}
       \right.{\scriptstyle n = `r n`} $$
 
-      \small Avec $\bm{1}_{A:B, i} = 1$ ou $0$ si la $i^e$ observation n'est pas 
+      \tiny Avec $\bm{1}_{A:B, i} = 1$ ou $0$ si la $i^e$ observation n'est pas 
       dans les 2 modalités A et B.
 
   \end{column}
@@ -167,12 +167,13 @@ $$\bm{Y} = \bm{XB} + \bm{E}$$
 
 \small Les observations pour les différentes valeurs de métabolites sont alors mise en
 forme dans la matrice $\bm{Y}$ :
-$$\bm{Y} = \left.
+
+$\bm{Y} = \left.
 \mathop{\begin{pmatrix}
 Y_{1,1} & \cdots & Y_{1,q}\\
 \vdots & \cdots & \vdots \\
 Y_{n,1} & \cdots & Y_{n,q}\\
-\end{pmatrix}}_{q = `r q`} \right. {\scriptstyle n = `r n`}$$
+\end{pmatrix}}_{q = `r q`} \right. {\scriptstyle n = `r n`}$ Y a été centrée et réduite.
 
 ## Calcul des résidus
 
