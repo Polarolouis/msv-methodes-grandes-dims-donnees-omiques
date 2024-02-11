@@ -35,20 +35,19 @@ table2$imbibition <- as.factor(table2$imbibition)
 # Présentation des données
 
 ## Contexte biologique
-\small
+
 Le jeu de données choisi étudie l'influence de 2 paramètres sur la 
 **capacité germinative** des graines chez \emph{Arabidopsis Thaliana} à l'aide de données de métabolomique
 pour des graines fraîchement récoltées (***F****reshly* ***H****arvested*).
-\normalsize
+
+## Les paramètres considérés
 
 ### La température, variable qualitative à 3 niveaux :
-
 - *Low*
 - *Medium*
 - *Elevated*
 
 ### Le stade d'imbibition, variable qualitative à 3 modalités : 
-    
 - DS (*Dry seed*)
 - EI après 6h d’imbibition (*Early imbibition*) correspondant à la fin de la prise d’eau, 
 - LI après 20h d’imbibition (*Late imbibition*) 
@@ -56,13 +55,25 @@ pour des graines fraîchement récoltées (***F****reshly* ***H****arvested*).
 
 ## Extrait des données
 
-Nous présentons ici les 5 premières colonnes (5 sur 237) du jeu de données\footnote{Les 4 
+Nous présentons ici les 7 premières colonnes (7 sur 237) du jeu de données\footnote{Les 4 
 premières colonnes présentent différentes informations pour identifier 
-les conditions expérimentales et la répétition.} :
+les conditions expérimentales et la répétition.} : 
 
+\begin{columns}
+\begin{column}{0.3\textwidth}
+\tiny
 ```{r, echo = FALSE}
-knitr::kable(table[1:6,5:9])
+knitr::kable(table[1:6,5:6], format = "latex", booktabs = TRUE)
 ```
+\end{column}
+\begin{column}{0.65\textwidth}
+\tiny
+```{r, echo = FALSE}
+knitr::kable(table[1:6,7:11], format = "latex", booktabs = TRUE)
+```
+\end{column}
+\end{columns}
+
 
 # Statistiques descriptives
 
