@@ -75,7 +75,7 @@ knitr::kable(table[1:6,7:11], format = "latex", booktabs = TRUE)
 \end{columns}
 
 
-# Statistiques descriptives
+# Statistiques descriptives et classification
 
 ### Vérifications élémentaires
 ```{r verification_elementaire, echo = FALSE}
@@ -118,7 +118,75 @@ grid.arrange(plot13_pca_ind, plot23_pca_ind, ncol = 2)
 barplot(res.pca$eig[,1]/sum(res.pca$eig[,1]), ylim = c(0,1))
 ```
 
-# Méthode du cours
+## Clustering (*K-means*)
+
+```{r kmeans, echo = FALSE, include=FALSE}
+require(factoextra)
+library(cluster)
+```
+```{r kmeans_optim, echo=FALSE, fig.height=6}
+data_cluster <- scale(table2[,-c(1,2)])
+
+fviz_nbclust(data_cluster, kmeans, method = "wss")
+```
+
+## $K = 4$
+
+```{r kmeans_4, echo = FALSE, fig.height=6}
+set.seed(1234)
+km <- kmeans(data_cluster, centers = 4, nstart = 25)
+fviz_cluster(km, data = data_cluster) + ggtitle("K = 4")
+```
+
+---
+
+Nous avons tenté de faire des moyennes par groupe sans voir de tendance se 
+dégager clairement.
+
+```{r kmeans_4_mean, echo = FALSE}
+# aggregate(table2[,-c(1,2)], by=list(cluster=km$cluster), mean)
+```
+\begin{columns}
+\begin{column}{0.45\textwidth}
+\tiny
+```{r table_km4_1, echo = FALSE}
+knitr::kable(cbind(km$cluster,table2[c(1,2)])[1:13,], format = "latex", booktabs = TRUE)
+```
+\end{column}
+\begin{column}{0.45\textwidth}
+\tiny
+```{r table_km4_2, echo = FALSE}
+knitr::kable(cbind(km$cluster,table2[c(1,2)])[14:27,], format = "latex", booktabs = TRUE)
+```
+\end{column}
+\end{columns}
+
+
+## $K = 9$
+
+```{r kmeans_9, echo = FALSE, fig.height=6}
+set.seed(1234)
+km9 <- kmeans(data_cluster, centers = 9, nstart = 25)
+fviz_cluster(km9, data = data_cluster) + ggtitle("K = 9")
+```
+
+---
+
+\begin{columns}
+\begin{column}{0.45\textwidth}
+\tiny
+```{r table_km9_1, echo = FALSE}
+knitr::kable(cbind(km9$cluster,table2[c(1,2)])[1:13,], format = "latex", booktabs = TRUE)
+```
+\end{column}
+\begin{column}{0.45\textwidth}
+\tiny
+```{r table_km9_2, echo = FALSE}
+knitr::kable(cbind(km9$cluster,table2[c(1,2)])[14:27,], format = "latex", booktabs = TRUE)
+```
+\end{column}
+\end{columns}
+# Méthode
 
 ## Principe du modèle
 
