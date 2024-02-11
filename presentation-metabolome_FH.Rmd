@@ -347,9 +347,9 @@ Nous avons testé en simulant plusieurs jeux de données avec différentes
 corrélations :
 
 - Sous un AR(1) ($\phi_1 = 0.5$), donc avec des corrélations entre colonnes.
-- Les données d'AR(1) mais blanchient par $\Sigma^{-1/2}$, donc sans 
+- Les données d'AR(1) mais blanchies par $\Sigma^{-1/2}$, donc sans 
 corrélations.
-- Des vecteurs gaussiens donc sans corrélations.
+- Des vecteurs gaussiens, donc sans corrélations.
 
 Le tout pour différentes valeurs de $n$ répétitions indépendantes, avec des 
 vecteurs de longeur $q$\footnote{correspondant au $p$ de l'article} en utilisant
@@ -449,14 +449,14 @@ En appliquant les tests à nos données nous avons :
 
 - Pour les données non blanchies, $\text{p-value}^{\text{avant blanch.}}_{T_1} = `r T1_pvalue(residus)`$
 et $\text{p-value}^{\text{avant blanch.}}_{T_2} = `r T2_pvalue(residus)`$, ainsi le test indique que nos 
-données sont corrélées, en opposition au test de Portmanteau ("no_whitening").
+données sont corrélées, en accord avec le test de Portmanteau ("no_whitening").
 - Pour les données blanchies, $\text{p-value}^{\text{après blanch.}}_{T_1} = `r T1_pvalue(residus %*% square_root_inv_hat_Sigma)`$
 et $\text{p-value}^{\text{après blanch.}}_{T_2} = `r T2_pvalue(residus %*% square_root_inv_hat_Sigma)`$, ainsi le test indique que nos 
 données sont corrélées, en opposition au test de Portmanteau et au processus de blanchiment.
 
 Aux vues des simulations, notre $c$ est sûrement trop grand pour ces tests.
 
-# Résultats de la méthode
+# Résultats
 ## Sélection de variable
 
 Le critère LASSO consiste à résoudre le problème d'optimisation suivant : 
@@ -531,7 +531,7 @@ de vue biologique nous allons nous limiter à un seuil de `r seuil`.
 ### Pourquoi ré-estimer ?
 Dans le cours (@levy-leducNotesPourCours2024), nous avons vu que les 
 Théorèmes 1 et 2 garantissent la consistance en signe des estimateurs des 
-$\tilde{\mathcal{B}}$. 
+$\mathcal{B}$. 
 
 Cependant, l'estimation de la valeur tend à être biaisée,
 cette étape nous permet donc de ré-estimer les valeurs des $\mathcal{B}$ qui ont
@@ -582,8 +582,7 @@ gr
 ```
 
 
-# Bibliographie {.allowframebreaks}
-
+# Bibliographie {.allowframebreaks .unlisted .unnumbered}
 <div id="refs"></div>
 
-# Merci pour votre attention
+# Merci pour votre attention {.unlisted .unnumbered}

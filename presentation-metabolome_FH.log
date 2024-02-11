@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.15)  9 FEB 2024 18:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.15)  11 FEB 2024 23:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1059,46 +1059,48 @@ LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <5> not available
 (Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 123.
 
 
-Overfull \hbox (73.05362pt too wide) detected at line 123
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
+Overfull \hbox (53.04402pt too wide) detected at line 123
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
  []
 
 
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
  []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
  []
 
 [2
 
 ]
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 167.
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 167.
-
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 167.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 137.
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 137.
 
-Overfull \vbox (15.58832pt too high) detected at line 167
- []
 
-
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
  []
 
 [3
+
+]
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
+ []
+
+[4
 
 ]
 Package microtype Info: Loading generic protrusion settings for font family
@@ -1106,211 +1108,292 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 190.
+(Font)              <10.95> on input line 213.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 190.
+(Font)              <8> on input line 213.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 190.
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 190.
-
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 213.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <8> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 190.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 213.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 190.
+(Font)              <9> on input line 213.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 190.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 213.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <9> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 190.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 213.
 
 
-Overfull \hbox (11.4824pt too wide) in alignment at lines 190--190
- [] [] [] [] [] 
+Overfull \hbox (22.56757pt too wide) in paragraph at lines 213--213
+[][]  
  []
 
 
-Overfull \hbox (11.4824pt too wide) in alignment at lines 190--190
- [] [] [] [] [] 
- []
-
-
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
- []
-
-[4
-
-]
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
  []
 
 [5
 
 ]
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
  []
 
 [6
 
 ]
-<presentation-metabolome_FH_files/figure-beamer/acp-1.pdf, id=370, 712.6625pt x
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
+ []
+
+[7
+
+]
+<presentation-metabolome_FH_files/figure-beamer/acp-1.pdf, id=471, 712.6625pt x
  315.1775pt>
 File: presentation-metabolome_FH_files/figure-beamer/acp-1.pdf Graphic file (ty
 pe pdf)
 <use presentation-metabolome_FH_files/figure-beamer/acp-1.pdf>
 Package pdftex.def Info: presentation-metabolome_FH_files/figure-beamer/acp-1.p
-df  used on input line 206.
+df  used on input line 230.
 (pdftex.def)             Requested size: 307.2871pt x 135.89879pt.
 
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
- []
-
-[7
-
- <./presentation-metabolome_FH_files/figure-beamer/acp-1.pdf>]
-<presentation-metabolome_FH_files/figure-beamer/unnamed-chunk-2-1.pdf, id=428, 
-711.65875pt x 273.02pt>
-File: presentation-metabolome_FH_files/figure-beamer/unnamed-chunk-2-1.pdf Grap
-hic file (type pdf)
-<use presentation-metabolome_FH_files/figure-beamer/unnamed-chunk-2-1.pdf>
-Package pdftex.def Info: presentation-metabolome_FH_files/figure-beamer/unnamed
--chunk-2-1.pdf  used on input line 210.
-(pdftex.def)             Requested size: 307.28867pt x 117.8879pt.
-
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
  []
 
 [8
 
- <./presentation-metabolome_FH_files/figure-beamer/unnamed-chunk-2-1.pdf>]
-<presentation-metabolome_FH_files/figure-beamer/unnamed-chunk-3-1.pdf, id=482, 
-636.3775pt x 410.53375pt>
+ <./presentation-metabolome_FH_files/figure-beamer/acp-1.pdf>]
+<presentation-metabolome_FH_files/figure-beamer/unnamed-chunk-3-1.pdf, id=534, 
+711.65875pt x 273.02pt>
 File: presentation-metabolome_FH_files/figure-beamer/unnamed-chunk-3-1.pdf Grap
 hic file (type pdf)
 <use presentation-metabolome_FH_files/figure-beamer/unnamed-chunk-3-1.pdf>
 Package pdftex.def Info: presentation-metabolome_FH_files/figure-beamer/unnamed
--chunk-3-1.pdf  used on input line 218.
-(pdftex.def)             Requested size: 307.28326pt x 198.23163pt.
+-chunk-3-1.pdf  used on input line 234.
+(pdftex.def)             Requested size: 307.28867pt x 117.8879pt.
 
-Overfull \vbox (1.20605pt too high) detected at line 218
- []
-
-
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
  []
 
 [9
 
  <./presentation-metabolome_FH_files/figure-beamer/unnamed-chunk-3-1.pdf>]
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
+<presentation-metabolome_FH_files/figure-beamer/unnamed-chunk-4-1.pdf, id=594, 
+636.3775pt x 410.53375pt>
+File: presentation-metabolome_FH_files/figure-beamer/unnamed-chunk-4-1.pdf Grap
+hic file (type pdf)
+<use presentation-metabolome_FH_files/figure-beamer/unnamed-chunk-4-1.pdf>
+Package pdftex.def Info: presentation-metabolome_FH_files/figure-beamer/unnamed
+-chunk-4-1.pdf  used on input line 242.
+(pdftex.def)             Requested size: 307.28326pt x 198.23163pt.
+
+Overfull \vbox (1.20605pt too high) detected at line 242
+ []
+
+
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
  []
 
 [10
 
-]
-LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <10.95> not available
-(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 235.
+ <./presentation-metabolome_FH_files/figure-beamer/unnamed-chunk-4-1.pdf>]
+<presentation-metabolome_FH_files/figure-beamer/kmeans_optim-1.pdf, id=653, 712
+.6625pt x 420.57124pt>
+File: presentation-metabolome_FH_files/figure-beamer/kmeans_optim-1.pdf Graphic
+ file (type pdf)
+<use presentation-metabolome_FH_files/figure-beamer/kmeans_optim-1.pdf>
+Package pdftex.def Info: presentation-metabolome_FH_files/figure-beamer/kmeans_
+optim-1.pdf  used on input line 247.
+(pdftex.def)             Requested size: 307.2871pt x 181.34267pt.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 247.
 
-LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <8> not available
-(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 235.
-
-LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <6> not available
-(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 235.
-
-LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 235.
-
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 235.
-
-LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <8> not available
-(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 235.
-
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <8> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 235.
-
-LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <6> not available
-(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 235.
-
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <6> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 235.
-
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10.95> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 235.
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <8> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 235.
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <6> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 235.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 23
-5.
-(/usr/share/texmf/tex/latex/lm/t1lmr.fd
-File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
  []
 
 [11
 
-]
-LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <5> not available
-(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 270.
-
-LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <5> not available
-(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 270.
-
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <5> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 270.
-
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <5> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 270.
-
-Overfull \hbox (10.94621pt too wide) detected at line 270
-\T1/lmss/bx/sl/10.95 B \OT1/lmss/m/n/10.95 = [] []
- []
-
+ <./presentation-metabolome_FH_files/figure-beamer/kmeans_optim-1.pdf>]
+<presentation-metabolome_FH_files/figure-beamer/kmeans_4-1.pdf, id=713, 706.64p
+t x 423.5825pt>
+File: presentation-metabolome_FH_files/figure-beamer/kmeans_4-1.pdf Graphic fil
+e (type pdf)
+<use presentation-metabolome_FH_files/figure-beamer/kmeans_4-1.pdf>
+Package pdftex.def Info: presentation-metabolome_FH_files/figure-beamer/kmeans_
+4-1.pdf  used on input line 252.
+(pdftex.def)             Requested size: 307.28888pt x 184.19873pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 270.
+(Font)              <14.4> on input line 252.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 270.
+(Font)              <10> on input line 252.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 252.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 252.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 270.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 252.
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <14.4> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 252.
+
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 252.
+
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <7> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 270.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 252.
 
 
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
  []
 
 [12
 
-]
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
+ <./presentation-metabolome_FH_files/figure-beamer/kmeans_4-1.pdf>]
+Overfull \hbox (3.71814pt too wide) in paragraph at lines 311--311
+[][]  
+ []
+
+
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
  []
 
 [13
 
 ]
-Overfull \hbox (9.51944pt too wide) detected at line 301
+<presentation-metabolome_FH_files/figure-beamer/kmeans_9-1.pdf, id=828, 706.64p
+t x 423.5825pt>
+File: presentation-metabolome_FH_files/figure-beamer/kmeans_9-1.pdf Graphic fil
+e (type pdf)
+<use presentation-metabolome_FH_files/figure-beamer/kmeans_9-1.pdf>
+Package pdftex.def Info: presentation-metabolome_FH_files/figure-beamer/kmeans_
+9-1.pdf  used on input line 316.
+(pdftex.def)             Requested size: 307.28888pt x 184.19873pt.
+
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
+ []
+
+[14
+
+ <./presentation-metabolome_FH_files/figure-beamer/kmeans_9-1.pdf>]
+Overfull \hbox (6.90564pt too wide) in paragraph at lines 372--372
+[][]  
+ []
+
+
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
+ []
+
+[15
+
+]
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
+ []
+
+[16
+
+]
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <10.95> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 389.
+
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <8> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 389.
+
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <6> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 389.
+
+LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 389.
+
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 389.
+
+LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <8> not available
+(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 389.
+
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <8> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 389.
+
+LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <6> not available
+(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 389.
+
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <6> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 389.
+
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10.95> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 389.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <8> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 389.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <6> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 389.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 38
+9.
+(/usr/share/texmf/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
+ []
+
+[17
+
+]
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <5> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 424.
+
+LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <5> not available
+(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 424.
+
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <5> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 424.
+
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <5> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 424.
+
+Overfull \hbox (10.94621pt too wide) detected at line 424
+\T1/lmss/bx/sl/10.95 B \OT1/lmss/m/n/10.95 = [] []
+ []
+
+
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
+ []
+
+[18
+
+]
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
+ []
+
+[19
+
+]
+Overfull \hbox (9.51944pt too wide) detected at line 455
 \OMS/lmsy/m/n/10.95 Y \OT1/lmss/m/n/10.95 = \T1/lmss/m/sl/10.95 vec\OT1/lmss/m/
 n/10.95 (\T1/lmss/bx/sl/10.95 Y\OT1/lmr/bx/n/10.95 ^^F[]\OT1/lmss/m/n/10.95 )\O
 ML/lmm/m/it/10.95 ; \OMS/lmsy/m/n/10.95 X \OT1/lmss/m/n/10.95 = (\OT1/lmr/bx/n/
@@ -1323,12 +1406,12 @@ n/10.95 = \T1/lmss/m/sl/10.95 vec\OT1/lmss/m/n/10.95 (\T1/lmss/bx/sl/10.95 B\OT
  []
 
 
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
  []
 
-[14
+[20
 
 ]
 \openout4 = `presentation-metabolome_FH.vrb'.
@@ -1339,208 +1422,200 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
- []
-
-[15
-
-]
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
- []
-
-[16
-
-]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 353.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 353.
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 353.
-
-
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
- []
-
-[17
-
-]
-Overfull \vbox (0.14064pt too high) detected at line 368
- []
-
-
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
- []
-
-[18
-
-]
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
- []
-
-[19
-
-]
-<presentation-metabolome_FH_files/figure-beamer/graphique_simu_T1-1.pdf, id=100
-5, 706.64pt x 313.17pt>
-File: presentation-metabolome_FH_files/figure-beamer/graphique_simu_T1-1.pdf Gr
-aphic file (type pdf)
-<use presentation-metabolome_FH_files/figure-beamer/graphique_simu_T1-1.pdf>
-Package pdftex.def Info: presentation-metabolome_FH_files/figure-beamer/graphiq
-ue_simu_T1-1.pdf  used on input line 404.
-(pdftex.def)             Requested size: 307.28888pt x 136.18483pt.
-
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
- []
-
-[20
-
- <./presentation-metabolome_FH_files/figure-beamer/graphique_simu_T1-1.pdf>]
-<presentation-metabolome_FH_files/figure-beamer/graphique_simu_T2-1.pdf, id=105
-9, 706.64pt x 313.17pt>
-File: presentation-metabolome_FH_files/figure-beamer/graphique_simu_T2-1.pdf Gr
-aphic file (type pdf)
-<use presentation-metabolome_FH_files/figure-beamer/graphique_simu_T2-1.pdf>
-Package pdftex.def Info: presentation-metabolome_FH_files/figure-beamer/graphiq
-ue_simu_T2-1.pdf  used on input line 415.
-(pdftex.def)             Requested size: 307.28888pt x 136.18483pt.
-
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
  []
 
 [21
 
- <./presentation-metabolome_FH_files/figure-beamer/graphique_simu_T2-1.pdf>]
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
+]
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
  []
 
 [22
 
 ]
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
  []
 
 [23
 
 ]
-\openout4 = `presentation-metabolome_FH.vrb'.
+Overfull \vbox (0.14064pt too high) detected at line 522
+ []
 
-(./presentation-metabolome_FH.vrb)
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
+
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
  []
 
 [24
 
 ]
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
  []
 
 [25
 
 ]
-<presentation-metabolome_FH_files/figure-beamer/selection_variables-1.pdf, id=1
-296, 351.3125pt x 134.5025pt>
-File: presentation-metabolome_FH_files/figure-beamer/selection_variables-1.pdf 
-Graphic file (type pdf)
-<use presentation-metabolome_FH_files/figure-beamer/selection_variables-1.pdf>
-Package pdftex.def Info: presentation-metabolome_FH_files/figure-beamer/selecti
-on_variables-1.pdf  used on input line 479.
-(pdftex.def)             Requested size: 307.3119pt x 117.65654pt.
+<presentation-metabolome_FH_files/figure-beamer/graphique_simu_T1-1.pdf, id=147
+1, 706.64pt x 313.17pt>
+File: presentation-metabolome_FH_files/figure-beamer/graphique_simu_T1-1.pdf Gr
+aphic file (type pdf)
+<use presentation-metabolome_FH_files/figure-beamer/graphique_simu_T1-1.pdf>
+Package pdftex.def Info: presentation-metabolome_FH_files/figure-beamer/graphiq
+ue_simu_T1-1.pdf  used on input line 558.
+(pdftex.def)             Requested size: 307.28888pt x 136.18483pt.
 
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
  []
 
 [26
 
- <./presentation-metabolome_FH_files/figure-beamer/selection_variables-1.pdf>]
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
+ <./presentation-metabolome_FH_files/figure-beamer/graphique_simu_T1-1.pdf>]
+<presentation-metabolome_FH_files/figure-beamer/graphique_simu_T2-1.pdf, id=153
+0, 706.64pt x 313.17pt>
+File: presentation-metabolome_FH_files/figure-beamer/graphique_simu_T2-1.pdf Gr
+aphic file (type pdf)
+<use presentation-metabolome_FH_files/figure-beamer/graphique_simu_T2-1.pdf>
+Package pdftex.def Info: presentation-metabolome_FH_files/figure-beamer/graphiq
+ue_simu_T2-1.pdf  used on input line 569.
+(pdftex.def)             Requested size: 307.28888pt x 136.18483pt.
+
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
  []
 
 [27
 
-]
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
+ <./presentation-metabolome_FH_files/figure-beamer/graphique_simu_T2-1.pdf>]
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
  []
 
 [28
 
 ]
-<presentation-metabolome_FH_files/figure-beamer/graphique-1.pdf, id=1439, 692.5
-875pt x 385.44pt>
-File: presentation-metabolome_FH_files/figure-beamer/graphique-1.pdf Graphic fi
-le (type pdf)
-<use presentation-metabolome_FH_files/figure-beamer/graphique-1.pdf>
-Package pdftex.def Info: presentation-metabolome_FH_files/figure-beamer/graphiq
-ue-1.pdf  used on input line 510.
-(pdftex.def)             Requested size: 307.29689pt x 171.0174pt.
-
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
  []
 
 [29
 
- <./presentation-metabolome_FH_files/figure-beamer/graphique-1.pdf>]
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
+]
+\openout4 = `presentation-metabolome_FH.vrb'.
+
+(./presentation-metabolome_FH.vrb)
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
  []
 
 [30
 
 ]
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
  []
 
 [31
 
 ]
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
+<presentation-metabolome_FH_files/figure-beamer/selection_variables-1.pdf, id=1
+798, 351.3125pt x 134.5025pt>
+File: presentation-metabolome_FH_files/figure-beamer/selection_variables-1.pdf 
+Graphic file (type pdf)
+<use presentation-metabolome_FH_files/figure-beamer/selection_variables-1.pdf>
+Package pdftex.def Info: presentation-metabolome_FH_files/figure-beamer/selecti
+on_variables-1.pdf  used on input line 633.
+(pdftex.def)             Requested size: 307.3119pt x 117.65654pt.
+
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
  []
 
 [32
 
-
-]
-Overfull \hbox (73.05362pt too wide) has occurred while \output is active
-  [] [][][][] [][][][][][] [][][][][][][][] [][][][][][][] [][][][][][][][] [][
-][][] [][]  
+ <./presentation-metabolome_FH_files/figure-beamer/selection_variables-1.pdf>]
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
  []
 
 [33
+
+]
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
+ []
+
+[34
+
+]
+<presentation-metabolome_FH_files/figure-beamer/graphique-1.pdf, id=1959, 692.5
+875pt x 385.44pt>
+File: presentation-metabolome_FH_files/figure-beamer/graphique-1.pdf Graphic fi
+le (type pdf)
+<use presentation-metabolome_FH_files/figure-beamer/graphique-1.pdf>
+Package pdftex.def Info: presentation-metabolome_FH_files/figure-beamer/graphiq
+ue-1.pdf  used on input line 664.
+(pdftex.def)             Requested size: 307.29689pt x 171.0174pt.
+
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
+ []
+
+[35
+
+ <./presentation-metabolome_FH_files/figure-beamer/graphique-1.pdf>]
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
+ []
+
+[36
+
+]
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
+ []
+
+[37
+
+]
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
+ []
+
+[38
+
+
+]
+Overfull \hbox (53.04402pt too wide) has occurred while \output is active
+  [] [][][][][] [][][][][][][][][][][] [][][][][][][][] [][][][][][][] [][][][]
+[][][][] [][][][] [][]  
+ []
+
+[39
 
 ]
 \tf@nav=\write5
@@ -1554,16 +1629,16 @@ Overfull \hbox (73.05362pt too wide) has occurred while \output is active
 
 (./presentation-metabolome_FH.aux) ) 
 Here is how much of TeX's memory you used:
- 26907 strings out of 478287
- 525087 string characters out of 5849289
- 819128 words of memory out of 5000000
- 44130 multiletter control sequences out of 15000+600000
- 673288 words of font info for 274 fonts, out of 8000000 for 9000
+ 26939 strings out of 478287
+ 526463 string characters out of 5849289
+ 831249 words of memory out of 5000000
+ 44157 multiletter control sequences out of 15000+600000
+ 672546 words of font info for 267 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,19n,122p,1023b,779s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.
-enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/
-dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr
+enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/
+enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr
 /share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/fonts/type1/pub
 lic/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/shar
 e/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/l
@@ -1577,10 +1652,10 @@ usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1
 /public/lm/lmsso8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso9.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on presentation-metabolome_FH.pdf (33 pages, 468411 bytes).
+Output written on presentation-metabolome_FH.pdf (39 pages, 513252 bytes).
 PDF statistics:
- 1819 PDF objects out of 2073 (max. 8388607)
- 1656 compressed objects within 17 object streams
- 99 named destinations out of 1000 (max. 500000)
- 127110 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 2375 PDF objects out of 2487 (max. 8388607)
+ 2186 compressed objects within 22 object streams
+ 115 named destinations out of 1000 (max. 500000)
+ 127125 words of extra memory for PDF output out of 128383 (max. 10000000)
 
